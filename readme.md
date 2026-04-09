@@ -1,106 +1,176 @@
-🤖 Jarvis AI Voice Assistant (Python)
-📌 Overview
+# 🤖 Jarvis AI Voice Assistant  
 
-Jarvis is a smart AI-based voice assistant built using Python that can perform various tasks through voice commands. It supports speech recognition, text-to-speech (online & offline), app control, web automation, and AI responses using Gemini API.
+---
 
-🚀 Features
-🎤 Voice Command Recognition
-🔊 Text-to-Speech (Online via gTTS & Offline via pyttsx3)
-🌐 Open Websites (Google, YouTube, Facebook, GitHub, etc.)
-💻 Launch Linux Applications (Chrome, VS Code, VLC, etc.)
-🎵 Play Songs from Custom Music Library
-🔍 YouTube Search for Songs
-🧠 AI Responses using Gemini API
-🗣 Wake Word Detection ("Jarvis")
-🧹 Smart Text Cleaning for Speech Output
-⚡ Multi-threaded Speech Execution
+## 📌 Overview  
 
-🛠️ Technologies Used
-Python
-SpeechRecognition
-pyttsx3 (Offline TTS)
-gTTS (Online TTS)
-Google Gemini API
-Webbrowser Module
-Subprocess & OS Modules
-dotenv
+This project is a **Python-based AI Voice Assistant** inspired by Jarvis (Iron Man).  
+It listens to voice commands, processes them intelligently, and performs tasks like opening apps, playing music, browsing the web, and answering questions using AI.
 
-📂 Project Structure
+It combines **Speech Recognition, Text-to-Speech, and AI integration** to create a real-time smart assistant.
+
+---
+
+## 🚀 Features  
+
+- 🎤 Voice command recognition  
+- 🗣 Wake word detection ("Jarvis")  
+- 🔊 Text-to-Speech (Online + Offline)  
+- 🌐 Open websites (Google, YouTube, GitHub, etc.)  
+- 💻 Launch Linux applications  
+- 🎵 Play songs from custom music library  
+- 🔍 Automatic YouTube search for songs  
+- 🧠 AI responses using Gemini API  
+- ⚡ Multi-threaded execution  
+- 🧹 Clean speech output processing  
+
+---
+
+## 🧠 System Approach  
+
+- **Type:** AI Voice Assistant  
+- **Flow:**  
+  - Wake word detection  
+  - Speech recognition  
+  - Command processing  
+  - Action execution / AI response  
+  - Voice output  
+
+---
+
+## 📊 Modules  
+
+### 🎙 Input Module  
+- Captures voice via microphone  
+- Converts speech → text  
+
+### ⚙️ Processing Module  
+- Matches predefined commands  
+- Uses AI for unknown queries  
+
+### 🔊 Output Module  
+- Converts text → speech  
+- Uses:
+  - gTTS (Online)  
+  - pyttsx3 (Offline)  
+
+---
+
+## 🎵 Music System  
+
+- Uses `musiclibrary.py`  
+- Includes:
+  - Bollywood songs  
+  - Old classics  
+  - Devotional songs  
+- If song not found → searches YouTube automatically  
+
+---
+
+## 🛠️ Technologies Used  
+
+- **Language:** Python  
+- **Libraries:**  
+  - SpeechRecognition  
+  - pyttsx3  
+  - gTTS  
+  - requests  
+  - python-dotenv  
+- **Tools:** ffplay, subprocess  
+- **API:** Gemini API  
+
+---
+
+## 📁 Project Structure  
+
+```bash
 Jarvis/
-│── main.py              # Main assistant logic
-│── musiclibrary.py      # Song database
-│── .env                 # API keys (not uploaded)
-│── README.md            # Project documentation
+│── main.py
+│── musiclibrary.py
+│── .env
+│── README.md
+```
 
-⚙️ Installation
-1️⃣ Clone the Repository
+---
+
+## ⚙️ Setup  
+
+### 1. Clone Repository  
+
+```bash
 git clone https://github.com/your-username/jarvis-ai.git
 cd jarvis-ai
+```
 
-2️⃣ Install Dependencies
-pip install -r requirements.txt
+---
 
-(If not using requirements.txt, install manually)
+### 2. Install Dependencies  
 
+```bash
 pip install speechrecognition pyttsx3 gtts python-dotenv requests
-🔑 Setup Environment Variables
+```
 
-Create a .env file in the root directory:
+---
 
+### 3. Create `.env` File  
+
+```
 GEMINI_API_KEY=your_api_key_here
 TTS_MODE=online
 GTTS_LANG=en
 GTTS_SLOW=false
-▶️ Run the Project
+```
+
+---
+
+## ▶️ Run  
+
+```bash
 python main.py
-🗣 Example Commands
-"Jarvis open Google"
-"Jarvis open YouTube"
-"Jarvis play Kesariya"
-"Jarvis open VS Code"
-"Jarvis what is AI?"
-🎵 Music Library
+```
 
-The assistant includes a built-in music library with:
+---
 
-Bollywood songs
-Old classics
-Devotional songs (Radhe Krishna 🙏)
+## 🎤 Example Commands  
 
-You can add more songs in musiclibrary.py.
+- Jarvis open Google  
+- Jarvis play Kesariya  
+- Jarvis open YouTube  
+- Jarvis open VS Code  
+- Jarvis what is AI  
 
-⚠️ Requirements
-Microphone access
-Internet connection (for AI & gTTS)
-ffplay installed (for audio playback)
-🔮 Future Improvements
-GUI Interface (GTK / Tkinter)
-Windows & Mac Support
-Chat history
-More AI integrations
-Smart home control
-👨‍💻 Author
+---
 
-Aaditya Bhatt
-BCA (AI & Data Science) Student
+## ⚠️ Requirements  
 
-🙏 Acknowledgment
+- Microphone  
+- Internet connection  
+- ffplay installed  
 
-Inspired by real-world AI assistants like Siri, Alexa, and Iron Man’s Jarvis.
+---
 
-💫 Closing
+## 🔮 Future Improvements  
 
-"Your personal AI assistant, always listening, always ready."
+- GUI Interface  
+- Cross-platform support  
+- Chat memory  
+- Smart home integration  
 
-Radhe Shyam 🙏
+---
 
-⚡ Bonus (Important)
+## 👨‍💻 Author  
 
-Before pushing to GitHub:
+**Aaditya Bhatt**  
 
-git init
-git add .
-git commit -m "Added Jarvis AI Assistant"
-git branch -M main
-git remote add origin https://github.com/your-username/repo-name.git
-git push -u origin main
+
+---
+
+## 🌟 Support  
+
+If you like this project, give it a ⭐ on GitHub!  
+
+---
+
+## 💫 Conclusion  
+
+This project demonstrates how **AI + Voice Processing + Automation** can be combined to build a real-world assistant.
