@@ -1,0 +1,24 @@
+# --- 🎙 Speech Recognition ---
+SpeechRecognition
+pyaudio
+
+requests
+aiohttp
+websockets
+
+
+edge-tts
+gTTS
+
+
+simpleaudio
+ffmpeg-python
+numpy
+
+
+pulseaudio
+alsa-utils
+multiprocess
+asyncio
+
+tk
